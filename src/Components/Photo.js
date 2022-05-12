@@ -8,7 +8,11 @@ class Photo extends Component
 		return <figure className="figure">
 
 			<img className="photo" src={post.imageLink} alt={post.descripton} />
-			
+			<figurecaption className="figureCaption">
+				<p> {post.descripton}	</p>
+			</figurecaption>
+
+
 			</figure>
 			
 	}

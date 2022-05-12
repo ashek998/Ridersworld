@@ -22,24 +22,29 @@ h2 {
     margin: 10px;
 }
 
-.photoGrid{
-    opacity: 100;
+.photoGrid {
     max-width: 1000px;
-    margin: 0 auto;
+    margin: auto auto;
     display: flex;
     flex-wrap: wrap;
-    
 }
 
-figure{
-    flex-basis : calc(33.33%-2rem);
-    border: 1.35px solid #808080;
-    padding: 0.9px;
+figure {
+    flex-basis: calc(33.33%-2rem);
+    padding: 0.1px;
     flex-grow: 1;
-    margin:2rem 2rem 2rem 2rem;
+    margin: calc(33.33%-2rem);
 }
 
 .photo {
-    width: 420px;
-    margin: 0rem 1px 2rem 5px
+    width: 410px;
+    margin: calc(figure.margin);
+}
+
+
+figureCaption { 
+    text-align: center;
+    font-family: 'Comic Sans MS';
+    font-size: 2rem;
+    color: whitesmoke;
 }
